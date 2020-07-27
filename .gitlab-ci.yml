@@ -1,0 +1,75 @@
+image: steveblackburn/comp1110-2020-s2-gitlab-ci:0.1.1
+
+stages:
+  - integrity
+  - validate
+  - build
+  - test
+
+before_script:
+  - export PATH_TO_FX=/usr/share/openjfx/lib
+  - export JAVAFX_OPTIONS="--module-path $PATH_TO_FX --add-modules=javafx.controls,javafx.fxml,javafx.media"
+  - export CP=src:/labs/comp1110-labs.jar:/labs/hamcrest-core-1.3.jar:/labs/junit-4.12.jar
+
+integrity:
+  tags:
+    - comp1110
+  stage: integrity
+  script:
+    - python3 /validate.py --integrity comp1110-labs
+
+validate:
+  tags:
+    - comp1110
+  stage: validate
+  script:
+    - python3 /checkintegrity.py Integrity.md /labs/Integrity.md ${GITLAB_USER_LOGIN} "${GITLAB_USER_NAME}"
+
+build:
+  tags:
+    - comp1110
+  stage: build
+  script:
+    - javac -encoding ISO-8859-1 $JAVAFX_OPTIONS -cp $CP src/comp1110/*/*.java
+  artifacts:
+    paths:
+      - src/comp1110/*/*.class
+
+lab1:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java $JAVAFX_OPTIONS -cp $CP org.junit.runner.JUnitCore comp1110.lab1.HelloWorldTest 
+  allow_failure: true
+
+lab2:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java $JAVAFX_OPTIONS -cp $CP org.junit.runner.JUnitCore comp1110.lab2.CountriesTest
+    - java $JAVAFX_OPTIONS -cp $CP org.junit.runner.JUnitCore comp1110.lab2.ReverseTest
+    - java $JAVAFX_OPTIONS -cp $CP org.junit.runner.JUnitCore comp1110.lab2.TriangleTest
+  allow_failure: true
+
+lab3:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java $JAVAFX_OPTIONS -cp $CP org.junit.runner.JUnitCore comp1110.lab3.BucketTest
+  allow_failure: true
+
+lab4:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java $JAVAFX_OPTIONS -cp $CP org.junit.runner.JUnitCore comp1110.lab4.HeadsOrTailsTest
+  allow_failure: true
+
+  
+## Local Variables:
+## mode: yaml
+## End:
