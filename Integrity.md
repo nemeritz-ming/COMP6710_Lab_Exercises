@@ -13,6 +13,6 @@ and understand the consequences of me breaching those rules.
 
 Name: Ming Lei
 
-UID: U7172618
+UID: u7172618
 
 Date: 2020-07-28
