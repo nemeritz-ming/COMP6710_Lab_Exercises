@@ -11,8 +11,8 @@ and I am aware of the relevant
 and understand the consequences of me breaching those rules.
 
 
-Name: <your name>
+Name: Ming Lei
 
-UID: <your uid>
+UID: U7172618
 
-Date: <yyyy-mm-dd>
+Date: 2020-07-28
