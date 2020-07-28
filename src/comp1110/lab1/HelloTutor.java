@@ -21,7 +21,7 @@ public class HelloTutor extends Application {
         StackPane root = new StackPane();
 
         // Create label and add to root
-        Label helloLabel = new Label("Hello Siying");
+        Label helloLabel = new Label("Hello Siying!");
         root.getChildren().add(helloLabel);
 
         // Set scene of stage with size 150x150 and show the
