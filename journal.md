@@ -41,7 +41,7 @@ able to *help the whole class*.
 
 | Week | Going Well? (1-5) | Group OK? (1-5) | What I have done | What I will do | What impedes me |
 |---|:---:|:---:|---|---|---|
-| 1 ||-|||
+| 1 |5|-|got the VDI working and start the lab|Finish Lab1 and get familiar with JAVA|
 | 2 ||-|||
 | 3 ||-|||
 | 4 |||||
