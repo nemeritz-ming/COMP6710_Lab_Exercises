@@ -14,20 +14,32 @@ In this lab you will learn a little more about GitLab before you write,
 test, and debug some small, *imperative* Java programs.   
 
 All of the exercises are done with your labs
-repo, and the Java exercises are done in IntelliJ.   You may work on your own
-computer, but you will need to share your
-work with your tutor and discuss it with them in your lab.
+repo, and the Java exercises are done in IntelliJ.   <!-- You may work on your own computer, but you will need to share your work with your tutor and discuss it with them in your lab. -->
+
+You may use either the VDI, VirtualBox, or your own natively-installed version of IntelliJ and Java.
 
 **It is essential that you complete this lab and have a tutor mark it off during the lab**.
 
-## Introduce yourself to someone else in the lab!
+## Part I:  30 Minute Check-In
+
+During the first 30 minutes of each lab _two_ things will be happening:
+
+1. You will check in with your tutor.   This is your chance to very briefly let your tutor know that you're at the lab, and to look at your journal entry together, and to note any issues you would particularly like to get help with during the lab.   You won't be getting help from your tutor in the first 30 minutes; rather, your tutor will be finding out what peoples' needs are, and they'll be making a plan for how best to help their students during the next 90 minutes.
+2. A _lab leader_ will be addressing the whole lab, discussing the concepts to be covered in today's lab, and will most likely give a demo.
+
+These two elements will happen in parallel.   It should only take a couple of minutes to check in with your tutor.   The rest of the time you should be following the lab leader.
+
+Getting the lab organized can take time.   While you're waiting for things to happen, **introduce yourself to someone else in your lab now** - it'll help you later!
+
+## Part II: Your Lab Tasks
+
+Half an hour after the lab starts, you should have already checked in with your tutor, the lab leader should have finished their intro, and you're ready to start doing the lab yourself.
 
 If you have a question or a problem during a lab, chances are someone else is having the same issue. If you get stuck, we encourage you to discuss with other people in your lab as well as your tutor.
 There will also be a few chances to discuss concepts and compare solutions with others.
 
-Introduce yourself to someone else in your lab now - it'll help you later!
 
-## GitLab Remedial Tasks (Fixing Problems From Week One)
+<!-- ## GitLab Remedial Tasks (Fixing Problems From Week One)
 
 There were major unforseen problems with gitlab during week one.   To
 ensure everyone's repos are in good shape, please take the following
@@ -86,7 +98,7 @@ assignment repos**
        If not, ask your tutor for help.
     3. Mark off any issues you've already completed.
 
-
+-->
 
 ## GitLab Task
 
@@ -114,7 +126,7 @@ assignment repos**
 	You should compete the following exercise.   In these steps you will update
 	your *personal* comp1110-labs repo with some changes.
 
-	1. Open your comp1110-labs repo in IntelliJ.
+	1. Open your comp1110-labs repo in IntelliJ (either in the VDI or in IntelliJ running natively on your computer).
 	2. If you have any uncommitted changes, commit them before starting the upstream pull (VCS -> Commit Changes...).
 	3. Select VCS -> Git -> Remotes...
 	4. Select the "+" button to add the comp1110 labs repo as a remote upstream repo
