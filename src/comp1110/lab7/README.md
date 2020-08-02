@@ -1,19 +1,28 @@
 # COMP1110 Lab 7
 
-## Before the Lab
+### Before the Lab
 
 * Complete week 8 of your personal journal, commit and push at least 5 minutes prior to the start of your lab.
 
 * Make sure you've covered module [**X01**](https://cs.anu.edu.au/courses/comp1110/lectures/javafx/)  and  [**X02**](https://cs.anu.edu.au/courses/comp1110/lectures/javafx/#x2) (JavaFX).
 
-## Purpose
+### Purpose
 
 In this lab you will solve a simple search problem to find paths through a maze.
 Complete the methods marked with 'FIXME' to search for the shortest path(s) through the maze. 
 
 **It is essential that you complete this lab and have a tutor mark it off during the lab**.
 
-## Extension: JavaFX Drag and Drop
+## Part I: 30-Minute Check-In
+
+As usual, you will do _two_ things during the 30-minute check-in:
+
+1.  Check in with **your tutor** together with the other members of your group.    Briefly outline any issues you're having that you'd particularly like help with during the lab (make sure you have your journal open and refer to it when you meet with your tutor).
+2.  When you're not doing your check-in with your tutor, you should be listening to the **lab leader** as they give an overview of what you'll be going through in this week's lab.
+
+## Part II:  Your Lab Tasks
+
+### Extension: JavaFX Drag and Drop
 
 Extend the your Board program from Lab 6 to include drag-and-drop.
     
@@ -77,7 +86,7 @@ Extend the your Board program from Lab 6 to include drag-and-drop.
     Commit and push your work, close the relevant issue (#19), and notify your tutor.
 
 
-## Extension: Hashing
+### Extension: Hashing
 
 **Create a hash program**
 
@@ -99,7 +108,7 @@ You can test 1. by running the program and checking the histogram of results to 
 
 How many ways can you do this?
 
-## Work on your group assignment
+### Work on your group assignment
 
 Use any spare time to work on your group assignment.
 

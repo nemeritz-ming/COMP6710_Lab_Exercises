@@ -1,6 +1,6 @@
 # COMP1110 Lab 2
 
-## Before the Lab
+### Before the Lab
 
 * Complete your [personal journal](https://gitlab.cecs.anu.edu.au/comp1110/comp1110-labs/blob/master/journal.md) for week 2, commit it and push at least 5 minutes prior to the lab.
 
@@ -8,7 +8,7 @@
 
 * Make sure you've covered the material for modules [**J5**](https://cs.anu.edu.au/courses/comp1110/lectures/java/#J5) (Selection) and [**J6**](https://cs.anu.edu.au/courses/comp1110/lectures/java/#J6) (Iteration)
 
-## Purpose
+### Purpose
 
 In this lab you will learn a little more about GitLab before you write,
 test, and debug some small, *imperative* Java programs.   
@@ -20,12 +20,12 @@ You may use either the VDI, VirtualBox, or your own natively-installed version o
 
 **It is essential that you complete this lab and have a tutor mark it off during the lab**.
 
-## Part I:  30 Minute Check-In
+## Part I:  30-Minute Check-In
 
 During the first 30 minutes of each lab _two_ things will be happening:
 
-1. You will check in with your tutor.   This is your chance to very briefly let your tutor know that you're at the lab, and to look at your journal entry together, and to note any issues you would particularly like to get help with during the lab.   You won't be getting help from your tutor in the first 30 minutes; rather, your tutor will be finding out what peoples' needs are, and they'll be making a plan for how best to help their students during the next 90 minutes.
-2. A _lab leader_ will be addressing the whole lab, discussing the concepts to be covered in today's lab, and will most likely give a demo.
+1. You will check in with **your tutor**.   This is your chance to very briefly let your tutor know that you're at the lab, and to look at your journal entry together, and to note any issues you would particularly like to get help with during the lab.   You won't be getting help from your tutor in the first 30 minutes; rather, your tutor will be finding out what peoples' needs are, and they'll be making a plan for how best to help their students during the next 90 minutes.
+2. The **lab leader** will be addressing the whole lab, discussing the concepts to be covered in today's lab, and will most likely give a demo.
 
 These two elements will happen in parallel.   It should only take a couple of minutes to check in with your tutor.   The rest of the time you should be following the lab leader.
 
@@ -39,7 +39,7 @@ If you have a question or a problem during a lab, chances are someone else is ha
 There will also be a few chances to discuss concepts and compare solutions with others.
 
 
-<!-- ## GitLab Remedial Tasks (Fixing Problems From Week One)
+<!-- ### GitLab Remedial Tasks (Fixing Problems From Week One)
 
 There were major unforseen problems with gitlab during week one.   To
 ensure everyone's repos are in good shape, please take the following
@@ -100,7 +100,7 @@ assignment repos**
 
 -->
 
-## GitLab Task
+### GitLab Task
 
 1.  **Pulling upstream commits in GitLab**
 
@@ -168,7 +168,7 @@ according to tests or specifications which have changed! A good rule
 of thumb would be to quickly upstream pull each time you start working
 on one of these repos. 
 
-## Imperative Coding Tasks
+### Imperative Coding Tasks
 
 The following programming tasks exercise simple *imperative* programming,
 demonstrating **sequence**, **selection**, and **repetition**.  We will start
@@ -292,7 +292,7 @@ _*_____*
     Get your tutor to mark off your work.
 
 
-## Debugging
+### Debugging
 
 Removing
 [bugs](https://blog.patracompany.com/the-history-of-the-computer-bug)
@@ -310,7 +310,7 @@ describe in the procedures (you may need to make a main method using
 inputs). The large code sample in the [Code Reduction](#codereduction)
 section is provided as a class called `RunLengthDecoder`. 
 
-### Print Statements
+#### Print Statements
 The most intuitive and sometimes most flexible way of debugging is
 through the strategic placement of informative print statements. Have
 a quick read of the code segment below: 
@@ -419,7 +419,7 @@ it works as expected. While this example is simple, it proves that we
 can reduce the bounds of an error by giving extra feedback to the user
 about how each component is working. 
 
-### Code Reduction
+#### Code Reduction
 This debugging strategy is more subtle and is generally more useful in
 larger programs. If we have a bug that cannot be isolated to a
 particular area, particularly bugs which cause crashes, we have two
@@ -499,7 +499,7 @@ function. Once you have debugged this function, write some sample
 input and output values and make sure the code works as you expect. 
 
 
-### The _Debugger_ (Breakpoints and Step Through Debugging) 
+#### The _Debugger_ (Breakpoints and Step Through Debugging) 
 
 IntelliJ has an incredibly powerful Java debugger built right in. It
 is designed to be easy to use and intuitive, but it is a powerful tool
@@ -508,13 +508,13 @@ and it has many advanced features. To get started, have a look at this
 You may find that the debugger is useful in completing the above
 activity.
 	
-## Prepare for the lab test
+### Prepare for the lab test
 
 If you finish early, use any spare time you have to do further preparation
 for the [lab test](https://cs.anu.edu.au/courses/comp1110/assessments/labtest/). You are encouraged to ask your tutor
 for help in understanding how to complete any of those questions.
 
-## Extension
+### Extension
 
 Note: Extension exercises are **not** assessable- if you need to prepare for a lab exam or work on a group assignment, do that first.
 Extension exercises are just here to give you some extra problems to extend the lab work.

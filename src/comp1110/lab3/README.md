@@ -1,12 +1,12 @@
 # COMP1110 Lab 3
 
-## Before the Lab
+### Before the Lab
 
 * Complete your personal journal for week 4, commit and push it at least 5 minutes prior to the first lab test.
 
 * Make sure you've covered the modules [**O1**](https://cs.anu.edu.au/courses/comp1110/lectures/oo/#O1)(Object Creation) and [**O2**](https://cs.anu.edu.au/courses/comp1110/lectures/oo/#O2) (Constructor)
 
-## Purpose
+### Purpose
 
 In this lab you will develop a very simple object-oriented Java
 program, learn about the stack trace, practise debugging a more
@@ -14,7 +14,16 @@ complex program and will form groups for the group assignment.
 
 **It is essential that have a tutor mark your work off *during* the lab**.
 
-## Assignment Groups.
+## Part I: 30-Minute Check-In
+
+As usual, you will do _two_ things during the 30-minute check-in:
+
+1.  Check in with **your tutor**.  Briefly outline any issues you're having, that you'd particularly like help with during the lab (make sure you have your journal open and refer to it when you meet with your tutor).  After this week, you'll do check-in with your whole group, rather than individually.
+2.  When you're not doing your check-in with your tutor, you should be listening to the **lab leader** as they give an overview of what you'll be going through in this week's lab.
+
+## Part II:  Your Lab Tasks
+
+### Assignment Groups.
 
 During today's lab you need to get to know your group and assign roles as per
 [deliverable D2A](https://cs.anu.edu.au/courses/comp1110/assessments/deliverables/#D2A).
@@ -24,7 +33,7 @@ this is a very important step.[README]()
 Close the associated issue (#13) and contact your tutor once you've completed
 [D2A](https://cs.anu.edu.au/courses/comp1110/assessments/deliverables/#D2A)..
 
-## Tasks
+### Tasks
 
 **Group design exercise**
 
@@ -130,7 +139,7 @@ Test your work using the provided `L3 BucketTest` class.
 Commit all of your work to git, push, close the associated issue (#12), and show your tutor.
 
 
-## Extension
+### Extension
 
 **Create a class that inherits from `Bucket`**
 

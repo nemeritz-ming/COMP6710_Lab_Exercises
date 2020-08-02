@@ -1,18 +1,27 @@
 # COMP1110 Lab 4
 
-## Before the Lab
+### Before the Lab
 
 * Complete your personal journal for week 5, commit and push at least 5 minutes before your lab.
 
 * Make sure you've covered the modules [**S2**](https://cs.anu.edu.au/courses/comp1110/lectures/se/#S2) (Branches and Merging) and [**J4**](https://cs.anu.edu.au/courses/comp1110/lectures/java/#J4) (Random).
 
-## Purpose
+### Purpose
 
 In this lab you will complete a git exercise in which you will practice using git in a group setting, and you will develop a more complex Java program.
 
 **It is essential that you complete this lab and have a tutor mark it off during the lab**.
 
-## GitLab Upstream Pulls for Assignment
+## Part I: 30-Minute Check-In
+
+As usual, you will do _two_ things during the 30-minute check-in:
+
+1.  Check in with **your tutor**.  This week, and for the remainder of the semster, you will do your check-in with the other members of your group.   You should briefly outline any issues you're having (as individuals or as a group), that you'd particularly like help with during the lab.  You should refer to your journal as you do this.  This helps your tutor prioritize time during the lab and 
+2.  When you're not doing your check-in with your tutor, you should be listening to the **lab leader** as they give an overview of what you'll be going through in this week's lab.
+
+## Part II:  Your Lab Tasks
+
+### GitLab Upstream Pulls for Assignment
 
 **One** group member should do the following.   Once complete, each of the
 other group members can pull the changes.
@@ -55,7 +64,7 @@ as described above.   If you have Windows on your computer, you will
 need to use [git bash](https://git-for-windows.github.io) rather than a
 terminal to set your upstream remote (steps 2-6).  Once done, close the issue (#14).
 
-## Git groupwork
+### Git groupwork
 
 This is a simple exercise that explores most of the git skills that you are
 expected to use in COMP1110. This exercise was demonstrated in a [how-to video](https://cs.anu.edu.au/courses/comp1110/help/mp4/gitexercise.mp4).
@@ -175,7 +184,7 @@ sitting nearby to each other.
 That completes the group exercise.  Close the associated issue (#15).  The next exercise is an individual exercise.
 
 
-## The Stack Trace and a Debugging Exercise
+### The Stack Trace and a Debugging Exercise
 Think back to lab 2. We discussed some common and very useful
 debugging strategies which will have you, with practise, easily
 finding and fixing bugs with minimal fuss. Now you will put those
@@ -284,7 +293,7 @@ There are many more exceptions and techniques to analyse stack traces,
 but these should be enough to get you started in understanding how to
 use them to quickly find errors in your code.
 
-## Your turn: Debugging
+### Your turn: Debugging
 Now, equipped with some common strategies (like print statements, code
 reduction and using the built in `IntelliJ` debugger) as well as a
 good understanding of the stack trace, see if you can find all the
@@ -293,7 +302,7 @@ output of the program matches the specifications included in the
 comments of the class. Feel free to add any code you feel is neccesary
 to properly test the functionality of the program.
 
-## Extension - Heads or Tails
+### Extension - Heads or Tails
 This exercise requires using object oriented design and imperative
 design. 
 
