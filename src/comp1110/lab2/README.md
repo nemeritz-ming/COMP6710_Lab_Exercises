@@ -204,7 +204,7 @@ demonstrating **sequence**, **selection**, and **repetition**.  We will start
     stuck, have a look at the [debugging](#debugging) exercise coming up.
    
    
-    If you are stuck, ask the student next to you! If all else fails, ask your tutor!
+    If you are stuck, ask another student in your group! If all else fails, ask your tutor!
     
 
 
