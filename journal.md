@@ -42,7 +42,7 @@ able to *help the whole class*.
 | Week | Going Well? (1-5) | Group OK? (1-5) | What I have done | What I will do | What impedes me |
 |---|:---:|:---:|---|---|---|
 | 1 |5|-|got the VDI working and start the lab|Finish Lab1 and get familiar with JAVA|
-| 2 ||-|||
+| 2 |4|-|finished homework J01-J08 and assignment 1 task 1 to task 10|I am going to finish lab 2 and task 11 tonight.|I found some tasks in ass 1 are really annoying but I do really like challenges!|
 | 3 ||-|||
 | 4 |||||
 | 5 |||||
