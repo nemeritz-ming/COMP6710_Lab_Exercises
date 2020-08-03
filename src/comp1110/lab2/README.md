@@ -1,6 +1,6 @@
 # COMP1110 Lab 2
 
-## Before the Lab
+### Before the Lab
 
 * Complete your [personal journal](https://gitlab.cecs.anu.edu.au/comp1110/comp1110-labs/blob/master/journal.md) for week 2, commit it and push at least 5 minutes prior to the lab.
 
@@ -8,26 +8,38 @@
 
 * Make sure you've covered the material for modules [**J5**](https://cs.anu.edu.au/courses/comp1110/lectures/java/#J5) (Selection) and [**J6**](https://cs.anu.edu.au/courses/comp1110/lectures/java/#J6) (Iteration)
 
-## Purpose
+### Purpose
 
 In this lab you will learn a little more about GitLab before you write,
 test, and debug some small, *imperative* Java programs.   
 
 All of the exercises are done with your labs
-repo, and the Java exercises are done in IntelliJ.   You may work on your own
-computer, but you will need to share your
-work with your tutor and discuss it with them in your lab.
+repo, and the Java exercises are done in IntelliJ.   <!-- You may work on your own computer, but you will need to share your work with your tutor and discuss it with them in your lab. -->
+
+You may use either the VDI, VirtualBox, or your own natively-installed version of IntelliJ and Java.
 
 **It is essential that you complete this lab and have a tutor mark it off during the lab**.
 
-## Introduce yourself to someone else in the lab!
+## Part I:  30-Minute Check-In
+
+During the first 30 minutes of each lab _two_ things will be happening:
+
+1. You will check in with **your tutor**.   This is your chance to very briefly let your tutor know that you're at the lab, and to look at your journal entry together, and to note any issues you would particularly like to get help with during the lab.   You won't be getting help from your tutor in the first 30 minutes; rather, your tutor will be finding out what peoples' needs are, and they'll be making a plan for how best to help their students during the next 90 minutes.
+2. The **lab leader** will be addressing the whole lab, discussing the concepts to be covered in today's lab, and will most likely give a demo.
+
+These two elements will happen in parallel.   It should only take a couple of minutes to check in with your tutor.   The rest of the time you should be following the lab leader.
+
+Getting the lab organized can take time.   While you're waiting for things to happen, **introduce yourself to someone else in your lab now** - it'll help you later!
+
+## Part II: Your Lab Tasks
+
+Half an hour after the lab starts, you should have already checked in with your tutor, the lab leader should have finished their intro, and you're ready to start doing the lab yourself.
 
 If you have a question or a problem during a lab, chances are someone else is having the same issue. If you get stuck, we encourage you to discuss with other people in your lab as well as your tutor.
 There will also be a few chances to discuss concepts and compare solutions with others.
 
-Introduce yourself to someone else in your lab now - it'll help you later!
 
-## GitLab Remedial Tasks (Fixing Problems From Week One)
+<!-- ### GitLab Remedial Tasks (Fixing Problems From Week One)
 
 There were major unforseen problems with gitlab during week one.   To
 ensure everyone's repos are in good shape, please take the following
@@ -86,9 +98,9 @@ assignment repos**
        If not, ask your tutor for help.
     3. Mark off any issues you've already completed.
 
+-->
 
-
-## GitLab Task
+### GitLab Task
 
 1.  **Pulling upstream commits in GitLab**
 
@@ -114,7 +126,7 @@ assignment repos**
 	You should compete the following exercise.   In these steps you will update
 	your *personal* comp1110-labs repo with some changes.
 
-	1. Open your comp1110-labs repo in IntelliJ.
+	1. Open your comp1110-labs repo in IntelliJ (either in the VDI or in IntelliJ running natively on your computer).
 	2. If you have any uncommitted changes, commit them before starting the upstream pull (VCS -> Commit Changes...).
 	3. Select VCS -> Git -> Remotes...
 	4. Select the "+" button to add the comp1110 labs repo as a remote upstream repo
@@ -156,7 +168,7 @@ according to tests or specifications which have changed! A good rule
 of thumb would be to quickly upstream pull each time you start working
 on one of these repos. 
 
-## Imperative Coding Tasks
+### Imperative Coding Tasks
 
 The following programming tasks exercise simple *imperative* programming,
 demonstrating **sequence**, **selection**, and **repetition**.  We will start
@@ -280,7 +292,7 @@ _*_____*
     Get your tutor to mark off your work.
 
 
-## Debugging
+### Debugging
 
 Removing
 [bugs](https://blog.patracompany.com/the-history-of-the-computer-bug)
@@ -298,7 +310,7 @@ describe in the procedures (you may need to make a main method using
 inputs). The large code sample in the [Code Reduction](#codereduction)
 section is provided as a class called `RunLengthDecoder`. 
 
-### Print Statements
+#### Print Statements
 The most intuitive and sometimes most flexible way of debugging is
 through the strategic placement of informative print statements. Have
 a quick read of the code segment below: 
@@ -407,7 +419,7 @@ it works as expected. While this example is simple, it proves that we
 can reduce the bounds of an error by giving extra feedback to the user
 about how each component is working. 
 
-### Code Reduction
+#### Code Reduction
 This debugging strategy is more subtle and is generally more useful in
 larger programs. If we have a bug that cannot be isolated to a
 particular area, particularly bugs which cause crashes, we have two
@@ -487,7 +499,7 @@ function. Once you have debugged this function, write some sample
 input and output values and make sure the code works as you expect. 
 
 
-### The _Debugger_ (Breakpoints and Step Through Debugging) 
+#### The _Debugger_ (Breakpoints and Step Through Debugging) 
 
 IntelliJ has an incredibly powerful Java debugger built right in. It
 is designed to be easy to use and intuitive, but it is a powerful tool
@@ -496,13 +508,13 @@ and it has many advanced features. To get started, have a look at this
 You may find that the debugger is useful in completing the above
 activity.
 	
-## Prepare for the lab test
+### Prepare for the lab test
 
 If you finish early, use any spare time you have to do further preparation
 for the [lab test](https://cs.anu.edu.au/courses/comp1110/assessments/labtest/). You are encouraged to ask your tutor
 for help in understanding how to complete any of those questions.
 
-## Extension
+### Extension
 
 Note: Extension exercises are **not** assessable- if you need to prepare for a lab exam or work on a group assignment, do that first.
 Extension exercises are just here to give you some extra problems to extend the lab work.

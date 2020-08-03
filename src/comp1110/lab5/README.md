@@ -1,18 +1,27 @@
 # COMP1110 Lab 5
 
-## Before the Lab
+### Before the Lab
 
 * Complete week 6 of your personal journal, commit and push at least 5 minutes prior to your lab.
 
 * Make sure you've covered the modules [**J9**](https://cs.anu.edu.au/courses/comp1110/lectures/java/#J9) (Lambda expressions) and [**X1**](https://cs.anu.edu.au/courses/comp1110/lectures/javafx/#X1) (JavaFX)
 
-## Purpose
+### Purpose
 
 In this lab you will write a simple Java FX program.
 
 **It is essential that you complete this lab and have a tutor mark it off during the lab**.
 
-## A simple JavaFX animation
+## Part I: 30-Minute Check-In
+
+As usual, you will do _two_ things during the 30-minute check-in:
+
+1.  Check in with **your tutor** together with the other members of your group.    Briefly outline any issues you're having that you'd particularly like help with during the lab (make sure you have your journal open and refer to it when you meet with your tutor).
+2.  When you're not doing your check-in with your tutor, you should be listening to the **lab leader** as they give an overview of what you'll be going through in this week's lab.
+
+## Part II:  Your Lab Tasks
+
+### A simple JavaFX animation
 
 Your objective here is to familiarize yourself further with JavaFX by creating
 a simple window with a moving 'ant'.
@@ -44,7 +53,7 @@ that little bit of code will be called once every 100 milliseconds (10 times a s
 
 ![alt ant](assets/lab5.png)
 
-## Extension
+### Extension
 
 **Use recursion to reverse an ArrayList**
 

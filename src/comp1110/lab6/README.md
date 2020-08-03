@@ -1,16 +1,25 @@
 # COMP1110 Lab 6
 
-## Before the Lab
+### Before the Lab
 
 * Make sure you've covered module [**X01**](https://cs.anu.edu.au/courses/comp1110/lectures/javafx/) (JavaFX)
 
-## Purpose
+### Purpose
 
 In this lab you will write a more advanced JavaFX program.
 
 **It is essential that you complete this lab and have a tutor mark it off during the lab**.
 
-## JavaFX Shapes
+## Part I: 30-Minute Check-In
+
+As usual, you will do _two_ things during the 30-minute check-in:
+
+1.  Check in with **your tutor** together with the other members of your group.    Briefly outline any issues you're having that you'd particularly like help with during the lab (make sure you have your journal open and refer to it when you meet with your tutor).
+2.  When you're not doing your check-in with your tutor, you should be listening to the **lab leader** as they give an overview of what you'll be going through in this week's lab.
+
+## Part II:  Your Lab Tasks
+
+### JavaFX Shapes
 
 1.  **Create a new JavaFX class.**
 
@@ -48,7 +57,7 @@ In this lab you will write a more advanced JavaFX program.
 to your tutor.
 
 
-## Work on your group assignment
+### Work on your group assignment
 
 Use any spare time to work on your group assignment.
 
