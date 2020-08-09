@@ -43,7 +43,7 @@ able to *help the whole class*.
 |---|:---:|:---:|---|---|---|
 | 1 |5|-|got the VDI working and start the lab|Finish Lab1 and get familiar with JAVA|
 | 2 |4|-|finished homework J01-J08 and assignment 1 task 1 to task 10|I am going to finish lab 2 and task 11 tonight.|I found some tasks in ass 1 are really annoying but I do really like challenges!|
-| 3 ||-|||
+| 3 |4|-|I finished homework J09,J11,O01,O02, task 11 and task 12|I am going to finishe labtest practice tonight |I could not find a good way to solve task 13 and I think I need more practice for java! Anyways, keep practicing!|
 | 4 |||||
 | 5 |||||
 | 6 |||||
