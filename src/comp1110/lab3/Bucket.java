@@ -23,7 +23,6 @@ public class Bucket {
         }
         else{content = capacity;}
     }
-
     public static void main(String[] args) {
         Bucket big = new Bucket(10.0);
         Bucket small = new Bucket(1.0);

@@ -28,7 +28,6 @@ class StackableBucket extends Bucket {
             this.innerBucket = null;
         }
     }
-
     public static void main(String[] args) {
         StackableBucket big = new StackableBucket(10.0, "big");
         StackableBucket medium = new StackableBucket(5.0, "medium");
