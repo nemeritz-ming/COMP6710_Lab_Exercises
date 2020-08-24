@@ -9,6 +9,8 @@
 
 In this lab you will work with a more complex object-oriented JavaFX program which has some missing components. 
 
+**It is important to complete this lab.   Your tutor will mark your engagement during the lab.**  You will receive a mark of 0.9 for full engagement and a small bonus (a mark of 1.0) if you completed all the tasks during the lab (your tutor will use the CI to check this --- you don't need to be marked off).
+
 ## Part I: 30-Minute Check-In
 
 As usual, you will do _two_ things during the 30-minute check-in:

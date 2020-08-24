@@ -10,7 +10,7 @@
 
 In this lab you will complete a git exercise in which you will practice using git in a group setting, and you will develop a more complex Java program.
 
-**It is essential that you complete this lab and have a tutor mark it off during the lab**.
+**It is important to complete this lab.   Your tutor will mark your engagement during the lab.**  You will receive a mark of 0.9 for full engagement and a small bonus (a mark of 1.0) if you completed all the tasks during the lab (your tutor will use the CI to check this --- you don't need to be marked off).
 
 ## Part I: 30-Minute Check-In
 
@@ -77,8 +77,8 @@ the exercise by delegating Cindy's activities to Alice (so you just have Alice
 and Bob).
 
 1. Before you start, **everyone** in the group must have a clone of your group
-repo and an associated project in IntelliJ.  This will work best if you're
-sitting nearby to each other.
+repo and an associated project in IntelliJ.  In the physical lab, this will work best if you're
+sitting nearby to each other, but it also works well when all participants are in a video call.
 	 
 2.  **Alice** does the following (with the others watching...):
     
@@ -299,7 +299,7 @@ reduction and using the built in `IntelliJ` debugger) as well as a
 good understanding of the stack trace, see if you can find all the
 bugs in the code provided in the class `Dice`. Make sure that the
 output of the program matches the specifications included in the
-comments of the class. Feel free to add any code you feel is neccesary
+comments of the class. Feel free to add any code you feel is necessary
 to properly test the functionality of the program.
 
 ### Extension - Heads or Tails
