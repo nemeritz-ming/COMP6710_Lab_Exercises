@@ -45,7 +45,7 @@ able to *help the whole class*.
 | 2 |4|-|finished homework J01-J08 and assignment 1 task 1 to task 10|I am going to finish lab 2 and task 11 tonight.|I found some tasks in ass 1 are really annoying but I do really like challenges!|
 | 3 |4|-|I finished homework J09,J11,O01,O02, task 11 and task 12|I am going to finishe labtest practice tonight |I could not find a good way to solve task 13 and I think I need more practice for java! Anyways, keep practicing!|
 | 4 |4||I have finished O04 and labtest|I am going to get familiar with my java concepts so that I can prepare for mid-term exam| Honestly, I am not quite familiar with many definitions or concepts of java and I think I need to put more effort into it|
-| 5 |||||
+| 5 |4|4|I have finished D2B of assignemnt 2|I am going to finish X01,O04,J14 also prepare for the midterm exam!|sometimes it is easy to get stuck in understanding the requirments of problems so I think I need to find the most easiest one and finish it asap!|
 | 6 |||||
 | 7 |||||
 | 8 |||||
