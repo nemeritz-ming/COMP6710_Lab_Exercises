@@ -36,5 +36,4 @@ public class Bucket {
         System.out.println(small.getContents());
         System.out.println(big.getContents());
     }
-
 }
