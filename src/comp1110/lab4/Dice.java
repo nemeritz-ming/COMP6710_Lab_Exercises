@@ -30,7 +30,7 @@ public class Dice {
 
         // Update bounds (1-10)
         unusual_dice.updateLowerBound(1);
-        unusual_dice.updateLowerBound(10);
+        unusual_dice.updateUpperBound(10);
 
         // Roll 10 times
         for (int i = 0; i < 10; i++){
@@ -45,24 +45,22 @@ public class Dice {
     }
 
     // Adjust the bounds after dice is created
-    public void updateLowerBound(int lowerBound){
-        lowerBound = lowerBound;
+    public void updateLowerBound(int newlowerBound){
+        lowerBound = newlowerBound;
     }
 
-    public void updateUpperBound(int upperBound){
-        upperBound = upperBound;
+    public void updateUpperBound(int newupperBound){
+        upperBound = newupperBound;
     }
 
     // Find the range of the dice roll
     public int diceRange() {
-        return lowerBound - upperBound;
+        return upperBound - lowerBound;
     }
 
     // Roll the dice, resulting in random int between lower and upper bound (inclusive)
     // e.g. a dice roll of between 1 - 3 can produce 1,2 or 3.
     public int rollDice(){
-        return r.nextInt(this.diceRange()) + upperBound;
+        return r.nextInt(this.diceRange()) + lowerBound;
     }
-
-
 }
