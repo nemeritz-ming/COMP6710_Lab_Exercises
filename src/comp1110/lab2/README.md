@@ -18,7 +18,7 @@ repo, and the Java exercises are done in IntelliJ.   <!-- You may work on your o
 
 You may use either the VDI, VirtualBox, or your own natively-installed version of IntelliJ and Java.
 
-**It is essential that you complete this lab and have a tutor mark it off during the lab**.
+**It is important to complete this lab.   Your tutor will mark your engagement during the lab.**  You will receive a mark of 0.9 for full engagement and a small bonus (a mark of 1.0) if you completed all the tasks during the lab (your tutor will use the CI to check this --- you don't need to be marked off).
 
 ## Part I:  30-Minute Check-In
 
@@ -204,7 +204,7 @@ demonstrating **sequence**, **selection**, and **repetition**.  We will start
     stuck, have a look at the [debugging](#debugging) exercise coming up.
    
    
-    If you are stuck, ask the student next to you! If all else fails, ask your tutor!
+    If you are stuck, ask another student in your group! If all else fails, ask your tutor!
     
 
 

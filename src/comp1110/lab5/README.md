@@ -10,7 +10,8 @@
 
 In this lab you will write a simple Java FX program.
 
-**It is essential that you complete this lab and have a tutor mark it off during the lab**.
+
+**It is important to complete this lab.   Your tutor will mark your engagement during the lab.**  You will receive a mark of 0.9 for full engagement and a small bonus (a mark of 1.0) if you completed all the tasks during the lab (your tutor will use the CI to check this --- you don't need to be marked off).
 
 ## Part I: 30-Minute Check-In
 
