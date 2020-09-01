@@ -41,7 +41,7 @@ to that, you may find the following helpful:
 primaryStage.setScene(scene);
 
 Timeline timeline = new Timeline(new KeyFrame(Duration.millis(100),
-                           c
+                            ae -> {
                                    /* your code goes here */
                                   }));
 timeline.setCycleCount(Animation.INDEFINITE);
