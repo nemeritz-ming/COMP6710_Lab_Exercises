@@ -46,6 +46,7 @@ public class Board extends Application {
 //        group.getChildren().add(polygon);
 //        primaryStage.show();
 //    }
+
     public void start(Stage primaryStage){
         Group group = new Group();
         Scene scene = new Scene(group ,600, 519);
