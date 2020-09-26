@@ -3,13 +3,11 @@
 ### Before the Lab
 
 * Complete week 8 of your personal journal, commit and push at least 5 minutes prior to the start of your lab.
-
-* Make sure you've covered module [**X01**](https://cs.anu.edu.au/courses/comp1110/lectures/javafx/)  and  [**X02**](https://cs.anu.edu.au/courses/comp1110/lectures/javafx/#x2) (JavaFX).
+* * Make sure you've covered module [**J14**](https://cs.anu.edu.au/courses/comp1110/lectures/java/#J14) (Collections).
 
 ### Purpose
 
-In this lab you will solve a simple search problem to find paths through a maze.
-Complete the methods marked with 'FIXME' to search for the shortest path(s) through the maze. 
+In this lab you will solve a simple search problem to find all of the different orderings of planting crops, given some basic rules.
 
 **It is important to complete this lab.   Your tutor will mark your engagement during the lab.**  You will receive a mark of 0.9 for full engagement and a small bonus (a mark of 1.0) if you completed all the tasks during the lab (your tutor will use the CI to check this --- you don't need to be marked off).
 
@@ -22,7 +20,25 @@ As usual, you will do _two_ things during the 30-minute check-in:
 
 ## Part II:  Your Lab Tasks
 
-### Extension: JavaFX Drag and Drop
+### Recursion, Sets, and Lists: Crop Rotation
+
+Complete the missing methods (marked `FIXME`) in the `CropRotation` class.   This question is based on a question from the 2020 S1 final exam.   
+
+To solve it, you need to use sets and lists, and you need to solve a search problem, like the [Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp1110-lectures/-/blob/master/src/comp1110/lectures/J14/Boggle.java) we solved in lectures in unit J14. 
+
+1. **Handle Simple Cases**
+
+    Add an `if` statement to `getAllRotations()` that checks for the cases where an empty list must be returned, and return the empty `rotations` list.
+
+2. **Implement Switch**
+
+    Use a switch statement to complete the `canFollow()` method, returning the correct value according the the vegetable groups of the `first` and `next` vegetables.
+    
+3. **Complete the Search**
+
+    Write the search by completing `getFixedRotation()`, and adding a `for` loop to `getAllRotations()` that calls `getFixedRotation()` for each of the vegetables in `crops`, adding the vegetable to `used` before calling, and removing it from `used` afterwards. 
+
+### Extension A: JavaFX Drag and Drop
 
 Extend the your Board program from Lab 6 to include drag-and-drop.
     
@@ -86,7 +102,7 @@ Extend the your Board program from Lab 6 to include drag-and-drop.
     Commit and push your work, close the relevant issue (#19), and notify your tutor.
 
 
-### Extension: Hashing
+### Extension B: Hashing
 
 **Create a hash program**
 
