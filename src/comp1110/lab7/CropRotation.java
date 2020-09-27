@@ -68,8 +68,8 @@ public class CropRotation {
      * of seasons is greater than the number of crops, return empty list.
      */
     public static Set<List<Vegetable>> getAllRotations(Set<Vegetable> crops, int seasons) {
-        List<CropRotationSol.Vegetable> used = new ArrayList<>();          // vegetables used so far in a given search
-        Set<List<CropRotationSol.Vegetable>> rotations = new HashSet<>();  // rotations found so far
+        List<Vegetable> used = new ArrayList<>();          // vegetables used so far in a given search
+        Set<List<Vegetable>> rotations = new HashSet<>();  // rotations found so far
 
         /* If there are no crops or no seasons or the number of seasons is
            greater than the number of crops, return an empty list. */
