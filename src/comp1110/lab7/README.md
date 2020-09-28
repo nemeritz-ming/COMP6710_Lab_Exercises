@@ -28,13 +28,43 @@ To solve it, you need to use sets and lists, and you need to solve a search prob
 
 1. **Handle Simple Cases**
 
+    It is a good strategy to identify and deal with simple cases first.   In this problem, notice that there are a number of circumstances where you should an empty list.  Attack this simple case first.
+    
     Add an `if` statement to `getAllRotations()` that checks for the cases where an empty list must be returned, and return the empty `rotations` list.
 
 2. **Implement Switch**
 
+    A search typically involves moving from one possibility to another (for example,
+    moving from one die in the [Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp1110-lectures/-/blob/master/src/comp1110/lectures/J14/Boggle.java)
+    to another).  Doing so involves at least two considerations:  a) ensuring that 
+    the possibility you're considering is not one you've already considered (if
+    you don't do this, your search will never complete because you will continuously
+    revisit cases you've already encountered), and b) ensuring that you only consider
+    _legal_ cases.
+    
+    Ensuring that you don't consider the same case twice was addressed in the [Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp1110-lectures/-/blob/master/src/comp1110/lectures/J14/Boggle.java)
+    by using an array of booleans called `used[]`, and the code carefully
+    kept track of which dice were already considered in the current search (you
+    may want to inspect the `findWords()` method in the [Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp1110-lectures/-/blob/master/src/comp1110/lectures/J14/Boggle.java)
+    to see how this was done).   In this problem you've been given a `List` of 
+    `Vegetables` called `used`, which you should use in a similar way, adding
+    vegetables to the list when they're being considered, and checking whether
+    they're already in the set before you try to use them.
+    
+    In the [Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp1110-lectures/-/blob/master/src/comp1110/lectures/J14/Boggle.java),
+    checking for _legal_ cases was doing by using a set of neighbours, so that
+    we knew for each die which were its legal neighbours.   In this case
+    you need to implement `canFollow()`, which will allow your code to determine
+    whether a particular crop is a legal follower of the current crop.
+    
     Use a switch statement to complete the `canFollow()` method, returning the correct value according the the vegetable groups of the `first` and `next` vegetables.
     
 3. **Complete the Search**
+
+    You should notice that the `findWords()` method in the [Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp1110-lectures/-/blob/master/src/comp1110/lectures/J14/Boggle.java)
+    is not terribly complex once the other parts are in place.   You now 
+    need to write the body of `getFixedRotation()`, which will be recursive,
+    filling a similar role to `findWords()` method in the [Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp1110-lectures/-/blob/master/src/comp1110/lectures/J14/Boggle.java).
 
     Write the search by completing `getFixedRotation()`, and adding a `for` loop to `getAllRotations()` that calls `getFixedRotation()` for each of the vegetables in `crops`, adding the vegetable to `used` before calling, and removing it from `used` afterwards. 
 
