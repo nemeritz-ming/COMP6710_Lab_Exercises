@@ -28,7 +28,9 @@ To solve it, you need to use sets and lists, and you need to solve a search prob
 
 1. **Handle Simple Cases**
 
-    It is a good strategy to identify and deal with simple cases first.   In this problem, notice that there are a number of circumstances where you should an empty list.  Attack this simple case first.
+    It is a good strategy to identify and deal with simple cases first.   In
+     this problem, notice that there are a number of circumstances where you
+     should return an empty list.  You should address this simple case first.
     
     Add an `if` statement to `getAllRotations()` that checks for the cases where an empty list must be returned, and return the empty `rotations` list.
 
