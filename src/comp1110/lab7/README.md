@@ -3,13 +3,11 @@
 ### Before the Lab
 
 * Complete week 8 of your personal journal, commit and push at least 5 minutes prior to the start of your lab.
-
-* Make sure you've covered module [**X01**](https://cs.anu.edu.au/courses/comp1110/lectures/javafx/)  and  [**X02**](https://cs.anu.edu.au/courses/comp1110/lectures/javafx/#x2) (JavaFX).
+* * Make sure you've covered module [**J14**](https://cs.anu.edu.au/courses/comp1110/lectures/java/#J14) (Collections).
 
 ### Purpose
 
-In this lab you will solve a simple search problem to find paths through a maze.
-Complete the methods marked with 'FIXME' to search for the shortest path(s) through the maze. 
+In this lab you will solve a simple search problem to find all of the different orderings of planting crops, given some basic rules.
 
 **It is important to complete this lab.   Your tutor will mark your engagement during the lab.**  You will receive a mark of 0.9 for full engagement and a small bonus (a mark of 1.0) if you completed all the tasks during the lab (your tutor will use the CI to check this --- you don't need to be marked off).
 
@@ -22,7 +20,57 @@ As usual, you will do _two_ things during the 30-minute check-in:
 
 ## Part II:  Your Lab Tasks
 
-### Extension: JavaFX Drag and Drop
+### Recursion, Sets, and Lists: Crop Rotation
+
+Complete the missing methods (marked `FIXME`) in the `CropRotation` class.   This question is based on a question from the 2020 S1 final exam.   
+
+To solve it, you need to use sets and lists, and you need to solve a search problem, like the [Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp1110-lectures/-/blob/master/src/comp1110/lectures/J14/Boggle.java) we solved in lectures in unit J14. 
+
+1. **Handle Simple Cases**
+
+    It is a good strategy to identify and deal with simple cases first.   In
+     this problem, notice that there are a number of circumstances where you
+     should return an empty list.  You should address this simple case first.
+    
+    Add an `if` statement to `getAllRotations()` that checks for the cases where an empty list must be returned, and return the empty `rotations` list.
+
+2. **Implement Switch**
+
+    A search typically involves moving from one possibility to another (for example,
+    moving from one die in the [Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp1110-lectures/-/blob/master/src/comp1110/lectures/J14/Boggle.java)
+    to another).  Doing so involves at least two considerations:  a) ensuring that 
+    the possibility you're considering is not one you've already considered (if
+    you don't do this, your search will never complete because you will continuously
+    revisit cases you've already encountered), and b) ensuring that you only consider
+    _legal_ cases.
+    
+    Ensuring that you don't consider the same case twice was addressed in the [Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp1110-lectures/-/blob/master/src/comp1110/lectures/J14/Boggle.java)
+    by using an array of booleans called `used[]`, and the code carefully
+    kept track of which dice were already considered in the current search (you
+    may want to inspect the `findWords()` method in the [Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp1110-lectures/-/blob/master/src/comp1110/lectures/J14/Boggle.java)
+    to see how this was done).   In this problem you've been given a `List` of 
+    `Vegetables` called `used`, which you should use in a similar way, adding
+    vegetables to the list when they're being considered, and checking whether
+    they're already in the set before you try to use them.
+    
+    In the [Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp1110-lectures/-/blob/master/src/comp1110/lectures/J14/Boggle.java),
+    checking for _legal_ cases was doing by using a set of neighbours, so that
+    we knew for each die which were its legal neighbours.   In this case
+    you need to implement `canFollow()`, which will allow your code to determine
+    whether a particular crop is a legal follower of the current crop.
+    
+    Use a switch statement to complete the `canFollow()` method, returning the correct value according the the vegetable groups of the `first` and `next` vegetables.
+    
+3. **Complete the Search**
+
+    You should notice that the `findWords()` method in the [Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp1110-lectures/-/blob/master/src/comp1110/lectures/J14/Boggle.java)
+    is not terribly complex once the other parts are in place.   You now 
+    need to write the body of `getFixedRotation()`, which will be recursive,
+    filling a similar role to `findWords()` method in the [Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp1110-lectures/-/blob/master/src/comp1110/lectures/J14/Boggle.java).
+
+    Write the search by completing `getFixedRotation()`, and adding a `for` loop to `getAllRotations()` that calls `getFixedRotation()` for each of the vegetables in `crops`, adding the vegetable to `used` before calling, and removing it from `used` afterwards. 
+
+### Extension A: JavaFX Drag and Drop
 
 Extend the your Board program from Lab 6 to include drag-and-drop.
     
@@ -86,7 +134,7 @@ Extend the your Board program from Lab 6 to include drag-and-drop.
     Commit and push your work, close the relevant issue (#19), and notify your tutor.
 
 
-### Extension: Hashing
+### Extension B: Hashing
 
 **Create a hash program**
 

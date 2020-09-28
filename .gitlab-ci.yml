@@ -69,7 +69,14 @@ lab4:
     - java $JAVAFX_OPTIONS -cp $CP org.junit.runner.JUnitCore comp1110.lab4.HeadsOrTailsTest
   allow_failure: true
 
-  
+lab7:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java $JAVAFX_OPTIONS -cp $CP org.junit.runner.JUnitCore comp1110.lab7.CropRotationTest
+  allow_failure: true
+
 ## Local Variables:
 ## mode: yaml
 ## End:
