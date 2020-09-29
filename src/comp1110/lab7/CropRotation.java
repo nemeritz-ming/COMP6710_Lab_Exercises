@@ -70,11 +70,16 @@ public class CropRotation {
     public static Set<List<Vegetable>> getAllRotations(Set<Vegetable> crops, int seasons) {
         List<Vegetable> used = new ArrayList<>();          // vegetables used so far in a given search
         Set<List<Vegetable>> rotations = new HashSet<>();  // rotations found so far
+        if (seasons > crops.size() || crops.isEmpty() || seasons == 0){
+            return rotations;
+        }
+        getFixedRotation(crops, seasons, used, rotations);
+        return rotations;
 
         /* If there are no crops or no seasons or the number of seasons is
            greater than the number of crops, return an empty list. */
 
-        return null;  // FIXME complete this method
+        // FIXME complete this method
     }
 
     /**
@@ -87,6 +92,27 @@ public class CropRotation {
      */
     private static void getFixedRotation(Set<Vegetable> crops, int seasons, List<Vegetable> used,
                                          Set<List<Vegetable>> rotations) {
+        if (seasons == 0){
+            System.out.println(used);
+            List<Vegetable> box = new ArrayList<>(used);
+            rotations.add(box);
+        }
+        else{
+            for(Vegetable k: crops){
+                if (used.isEmpty()){
+                    used.add(k);
+                    getFixedRotation(crops,seasons-1,used,rotations);
+                    used.remove(k);
+                }
+                else{
+                    if (canFollow(used.get(used.size()-1), k) && !used.contains(k)){
+                        used.add(k);
+                        getFixedRotation(crops,seasons-1,used,rotations);
+                        used.remove(k);
+                    }
+                }
+            }
+        }
         // FIXME complete this method
     }
 
@@ -98,6 +124,29 @@ public class CropRotation {
      * @return true if next can follow first
      */
     private static boolean canFollow(Vegetable first, Vegetable next) {
-        return false;  // FIXME complete this method
+        switch (first.group){
+            case LEGUME:
+                return next.group == Group.BRASSICA && !next.name.equals(first.name);
+            case BRASSICA:
+                return next.group == Group.ALLIUM && !next.name.equals(first.name);
+            case ALLIUM:
+                return next.group == Group.FRUITING && !next.name.equals(first.name);
+            case FRUITING:
+                return next.group == Group.LEGUME && !next.name.equals(first.name);
+            default:
+                return false;
+        } // FIXME complete this method
+    }
+
+    public static void main(String[] args) {
+        Set<Vegetable> box = new HashSet<>();
+        box.add(new Vegetable("Eggplant", Group.FRUITING));
+        box.add(new Vegetable("Pea", Group.LEGUME));
+        box.add(new Vegetable("Onion", Group.ALLIUM));
+        box.add(new Vegetable("Kale", Group.BRASSICA));
+        List<Vegetable> used = new ArrayList<>();
+        Set<List<Vegetable>> rotations = new HashSet<>();
+        getFixedRotation(box,4,used,rotations);
+        System.out.println(rotations);
     }
 }
