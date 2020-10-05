@@ -30,7 +30,7 @@ Unlike previous weeks, we have not created a step-by-step guide for solving thes
 
 ### Stack
 
-A *stack* is an abstract data type that allows elements to be added and removed in a  first-in, first-out order.
+A *stack* is an abstract data type that allows elements to be added and removed in a last-in, first-out order.
 A stack typically supports the following operations:
 * push: adds an element to the top of the stack
 * pop: removes and returns the element at the top of the stack
