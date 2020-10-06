@@ -49,7 +49,7 @@ able to *help the whole class*.
 | 6 |4|4|I have finished all homework and midterm exam and also sample exam|I am going to finish assignment 2 and get familiar with JAVAFX and data structure in Java | Midterm is hard but I will work harder
 | 7 |4|4|I have finished task 7,9 of assignment 2|Going to finish rest of it|prepare for the final
 | 8 |4|4|I have finished all of assignment 2|Going to prepare for final exam|I am so sad recently and I think I need a new start to make a plan and stick to plan everyday!
-| 9 |||||
+| 9 |3|3|I have made a plan for preparing for my final exam|I am so sad since I am hospitalized now because of seriouse disease(PE), I do not know wether I can recover and I am so nervous|Hope I can feel better and finish all the stuff this term.
 | 10 |||||
 | 11 |||||
 | 12 |||||
