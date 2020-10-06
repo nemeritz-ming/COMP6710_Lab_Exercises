@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="L8 ArrayStackTest" type="JUnit" factoryName="JUnit">
+    <module name="COMP1110 Labs" />
+    <useClassPathOnly />
+    <option name="PACKAGE_NAME" value="comp1110.lab8" />
+    <option name="MAIN_CLASS_NAME" value="comp1110.lab8.ArrayStackTest" />
+    <option name="METHOD_NAME" value="" />
+    <option name="TEST_OBJECT" value="class" />
+    <option name="PARAMETERS" value="" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
