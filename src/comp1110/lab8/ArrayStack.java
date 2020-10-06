@@ -1,6 +1,8 @@
 package comp1110.lab8;
 
+import java.util.ArrayList;
 import java.util.EmptyStackException;
+import java.util.List;
 
 /**
  * This class represents a stack, in which elements are added and removed in a
@@ -14,12 +16,13 @@ import java.util.EmptyStackException;
  * java.util.EmptyStackException.
  */
 public class ArrayStack<T> {
+    List<T> stack = new ArrayList<>();
     /**
      * @return true if the stack is empty
      */
     public boolean isEmpty() {
+        return stack.isEmpty();
         // FIXME complete this method
-        return false;
     }
 
     /**
@@ -29,6 +32,7 @@ public class ArrayStack<T> {
      * @param value the value to add to this stack
      */
     public void push(T value) {
+        stack.add(0,value);
         // FIXME complete this method
     }
 
@@ -39,8 +43,14 @@ public class ArrayStack<T> {
      * @throws EmptyStackException if the stack is currently empty
      */
     public T pop() {
+        if (!stack.isEmpty()){
+            T popValue = stack.get(0);
+            stack.remove(0);
+            return popValue;}
+        else {
+            throw new EmptyStackException();
+        }
         // FIXME complete this method
-        return null;
     }
 
     /**
@@ -51,8 +61,13 @@ public class ArrayStack<T> {
      * @throws EmptyStackException if the stack is currently empty
      */
     public T peek() {
+        if (!stack.isEmpty()){
+            return stack.get(0);
+        }
         // FIXME complete this method
-        return null;
+        else{
+            throw new EmptyStackException();
+        }
     }
 
     /**
@@ -65,7 +80,7 @@ public class ArrayStack<T> {
      */
     public boolean contains(T value) {
         // FIXME complete this method
-        return false;
+        return stack.contains(value);
     }
 
     /**
@@ -79,7 +94,22 @@ public class ArrayStack<T> {
      * @return a String representation of this stack
      */
     public String toString() {
+        String ans = "";
+        if (stack.isEmpty()){
+            return ans;
+        }
+        else{
+            for(int i =0; i< stack.size();i++){
+                if (i == 0){
+                    ans = ans + stack.get(i);
+                }
+                else {
+                    ans = ans + "," + stack.get(i);
+                }
+            }
+        }
+        return ans;
+
         // FIXME complete this method
-        return null;
     }
 }

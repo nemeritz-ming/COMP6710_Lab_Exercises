@@ -30,8 +30,20 @@ public class FamilyTree {
      */
     public static String getAncestry(Individual ancestor, String targetName) {
         // FIXME complete this method
-        return "";
+        if (ancestor.name.equals(targetName)){
+            return ancestor.name;
+        }
+        if (ancestor.children != null){
+            for (Individual child : ancestor.children){
+                if (getAncestry(child, targetName)!= null){
+                    return getAncestry(child, targetName) + " born of " +  ancestor.name ;
+                }
+            }
+        }
+        return null;
+
     }
+
 
     /**
      * This class represents an individual with zero or more children.
